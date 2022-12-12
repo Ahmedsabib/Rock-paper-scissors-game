@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper & Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Rock, Paper & Scissors Game</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="Images/Rock.jpeg" height="150" width="150" alt="" onclick="rpsGame(this)">
+            <img id="paper" src="Images/Paper2.jpeg" height="150" width="150" alt="" onclick="rpsGame(this)">
+            <img id="scissors" src="Images/Scissors.jpeg" height="150" width="150" alt="" onclick="rpsGame(this)">
+        </div>
+        <div class="accordion p-5" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Rules & Regulations
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p id="text">On the count of three (usually accompanied by a chant of “Rock, Paper, Scissors”), each time raising one hand in a fist and swinging it down on the count, opposing players “throw” their selection into the middle. Rock is designated by maintaining the fist, Scissors by extending the middle and index fingers, and Paper by holding the hand out flat. If players throw out the same gesture, the game goes on. If not, it’s decided by a harmonic and intransitive method — rock crushes scissors, scissors cuts paper, but paper covers rock.</p>
+                </div>
+              </div>
+            </div>
+        <div class="rules pt-4">
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExampleVideo" role="button" aria-expanded="false" aria-controls="collapseExampleVideo">
+                Gameplay Video
+                </a>
+            </p>
+            <div class="collapse gameplay-video p-5" id="collapseExampleVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2dsHuU10udY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
